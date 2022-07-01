@@ -66,24 +66,21 @@ a {
 .active {
   color: var(--main-color);
 }
-.primary-btn,
-.secondary-btn {
+.primary-btn {
   text-align: center;
   border: 1px solid transparent;
-  color: #eee;
+  color: var(--btn-color);
   font-size: 1.2rem;
   transition: 0.2s;
-  border-radius: 5px;
+  border-radius: 10px;
+  padding: 15px 20px;
+  width: 280px;
   cursor: pointer;
 }
 .primary-btn {
-  background: #ffc400;
-  padding: 10px 50px;
+  background: var(--main-color);
 }
-.secondary-btn {
-  background: #24c5dc;
-  padding: 5px 20px;
-}
+
 .btn:hover {
   box-shadow: 3px 3px 5px rgba(92, 92, 92, 0.5);
 }

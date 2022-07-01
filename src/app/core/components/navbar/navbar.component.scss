@@ -1,6 +1,5 @@
 section {
   position: relative;
-  height: 76px;
 }
 a,
 a:hover {
@@ -8,13 +7,14 @@ a:hover {
 }
 // Display Part of Top Menu CSS
 .navbar {
-  padding: 13px 25px;
+  padding: 0px 25px;
 }
 
 .navbar ul {
   display: flex;
   align-items: center;
   justify-content: end;
+  padding-top: 0;
 }
 
 .navbar-item {
