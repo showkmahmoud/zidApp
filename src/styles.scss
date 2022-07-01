@@ -1,1 +1,92 @@
 /* You can add global styles to this file, and also import other style files */
+
+/*   global  */
+:root {
+  --main-color: #8a57a3;
+  --btn-color: #fdb515;
+  --bg-color: #ecf8fc;
+  --header-color: #000;
+  --p-color: grey;
+  --main-bg: #fff;
+  --logo-color: #fff;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+span,
+a,
+img {
+  display: inline-block;
+}
+.container {
+  padding-top: 15px;
+  width: 85%;
+  margin: 0 auto;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+.align-items {
+  align-items: center;
+}
+.align-start {
+  align-items: flex-start;
+}
+.justify-space-between {
+  justify-content: space-between;
+}
+.justify-center {
+  justify-content: center;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.main-bg {
+  background-color: var(--main-bg);
+}
+.main-text {
+  color: var(--header-color);
+}
+.p-text {
+  color: var(--p-color);
+}
+.active {
+  color: var(--main-color);
+}
+.primary-btn,
+.secondary-btn {
+  text-align: center;
+  border: 1px solid transparent;
+  color: #eee;
+  font-size: 1.2rem;
+  transition: 0.2s;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.primary-btn {
+  background: #ffc400;
+  padding: 10px 50px;
+}
+.secondary-btn {
+  background: #24c5dc;
+  padding: 5px 20px;
+}
+.btn:hover {
+  box-shadow: 3px 3px 5px rgba(92, 92, 92, 0.5);
+}
+.normal-radius {
+  border-radius: 5px;
+}
