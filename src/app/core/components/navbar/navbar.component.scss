@@ -1,0 +1,70 @@
+section {
+  position: relative;
+  height: 76px;
+}
+a,
+a:hover {
+  color: var(--text-color);
+}
+// Display Part of Top Menu CSS
+.navbar {
+  padding: 13px 25px;
+}
+
+.navbar ul {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.navbar-item {
+  margin-right: 100px;
+}
+
+.navbar-logo {
+  width: 10%;
+}
+
+.navbar-logo img {
+  max-height: 50px;
+  vertical-align: middle;
+}
+
+.navbar-toggle {
+  display: none;
+}
+
+@media (max-width: 47.9375em) {
+  .navbar {
+    padding: 13px 16px;
+  }
+  .navbar ul {
+    flex-wrap: wrap;
+  }
+  .navbar-toggle {
+    display: inline-flex;
+  }
+  .navbar-logo {
+    padding-left: 0;
+  }
+  .navbar-item {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  .navbar-hide {
+    display: none;
+  }
+
+  .link {
+    margin-right: 0px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+  }
+  .button {
+    margin-top: 10px;
+    margin-right: 0;
+  }
+}

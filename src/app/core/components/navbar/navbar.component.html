@@ -1,1 +1,24 @@
-<p>navbar works!</p>
+<section class="top-menu">
+  <nav class="navbar">
+    <ul class="container">
+      <!-- Toggle -->
+      <li class="navbar-toggle">
+        <i-bs name="list" width="35" height="35" (click)="toggleMenu()"> </i-bs>
+      </li>
+      <li
+        class="navbar-item"
+        *ngFor="let item of navbarItems"
+        [ngClass]="{
+          'navbar-hide': menuOpen
+        }"
+      >
+        <a [attr.href]="item?.value">
+          <span class="tui-text_body-m">{{ item?.label }}</span>
+        </a>
+      </li>
+      <li class="navbar-logo">
+        <img loading="lazy" src="assets/zid-assets/zid-logo 1.png" />
+      </li>
+    </ul>
+  </nav>
+</section>
