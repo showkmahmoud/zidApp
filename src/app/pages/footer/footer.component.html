@@ -1,0 +1,25 @@
+<div id="footer">
+  <div class="messages-wrapper">
+    <i-bs name="chat-left-text-fill" width="20" height="20"> </i-bs>
+  </div>
+  <div class="scroll-up" (click)="scrollToTop()">
+    <i-bs name="arrow-up-short" width="50" height="50"> </i-bs>
+  </div>
+  <img class="footer-logo" [src]="data.footer.logo" alt="" />
+  <div class="row footer-icons">
+    <a
+      class="social-icon"
+      *ngFor="let icon of data.footer.socialMedia"
+      tuiLink
+      [attr.href]="icon?.link"
+      target="_blank"
+    >
+      <i-bs
+        [name]="icon.iconName"
+        [width]="icon.iconSize"
+        [height]="icon.iconSize"
+      >
+      </i-bs>
+    </a>
+  </div>
+</div>
