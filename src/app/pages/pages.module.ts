@@ -6,7 +6,7 @@ import { MainPageComponent } from './components/main-page/main-page.component';
 import { CoreModule } from '../core/core.module';
 import { ElementsModule } from '../elements/elements.module';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
-import { FooterComponent } from './footer/footer.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [MainPageComponent, FooterComponent],
