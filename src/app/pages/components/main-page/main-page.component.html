@@ -2,7 +2,7 @@
 <section class="container home">
   <div id="home">
     <p class="home-header">{{ data.home.header }}</p>
-    <p class="home-description">
+    <p class="home-description description">
       {{ data.home.description }}
     </p>
     <div class="btn-wrapper">
@@ -24,11 +24,11 @@
 </section>
 <div id="improvements">
   <div class="row justify-space-between">
-    <div class="improvements-info_wrapper">
+    <div class="improvements-info_wrapper col-s-12 col-m-7">
       <p class="improvements-info_wrapper-header">
         {{ data.improvements.header }}
       </p>
-      <p class="improvements-info_wrapper-description">
+      <p class="improvements-info_wrapper-description description">
         {{ data.improvements.description }}
       </p>
       <ul class="improvements-info_wrapper-list">
@@ -46,7 +46,7 @@
         ></app-primary-button>
       </div>
     </div>
-    <div class="improvements-img_wrapper">
+    <div class="improvements-img_wrapper col-s-12 col-m-7">
       <div class="imgs-wrapper">
         <img
           class="improvements-img_wrapper-dot_pattern"
@@ -73,7 +73,10 @@
     {{ data.applications.description }}
   </p>
   <div class="row cards-wrapper justify-space-between">
-    <div class="applications-card" *ngFor="let card of data.applications.cards">
+    <div
+      class="applications-card col-s-12 col-m-6"
+      *ngFor="let card of data.applications.cards"
+    >
       <div class="row">
         <div class="card-img-wrapper">
           <img class="card-img" [src]="card.img" alt="" />
@@ -89,7 +92,7 @@
             <span class="card-subtitle">{{ card.subTitle }}: </span
             ><span class="card-author"> {{ card.author }}</span>
           </p>
-          <p class="card-description">
+          <p class="card-description description">
             {{ card.description }}
           </p>
         </div>

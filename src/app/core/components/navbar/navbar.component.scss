@@ -1,9 +1,13 @@
 section {
   position: relative;
+  height: 70px;
 }
 a,
 a:hover {
   color: var(--text-color);
+}
+a span {
+  white-space: nowrap;
 }
 // Display Part of Top Menu CSS
 .navbar {
@@ -12,6 +16,7 @@ a:hover {
   left: 0;
   right: 0;
   position: absolute;
+  background: var(--main-bg);
 }
 
 .navbar ul {
@@ -39,7 +44,7 @@ a:hover {
 
 @media (max-width: 47.9375em) {
   .navbar {
-    padding: 13px 16px;
+    padding: 13px 16px 0;
   }
   .navbar ul {
     flex-wrap: wrap;
@@ -55,7 +60,7 @@ a:hover {
   .navbar-item {
     width: 100%;
     text-align: center;
-    margin: 5px 0;
+    margin: 0;
     border-bottom: 1px solid #eee;
     padding-bottom: 10px;
   }

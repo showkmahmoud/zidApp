@@ -1,3 +1,7 @@
+div {
+  flex-wrap: nowrap;
+  align-items: center;
+}
 img {
   height: 25px;
   vertical-align: middle;
@@ -10,4 +14,5 @@ span {
   font-weight: 700;
   font-size: 18px;
   line-height: 34px;
+  white-space: nowrap;
 }
