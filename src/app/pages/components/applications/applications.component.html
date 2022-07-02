@@ -1,0 +1,41 @@
+<div id="applications">
+  <p class="applications-header">
+    {{ data.applications.header }}
+  </p>
+  <p class="applications-description">
+    {{ data.applications.description }}
+  </p>
+  <div class="row cards-wrapper justify-space-between">
+    <div
+      class="applications-card col-s-12 col-m-6"
+      *ngFor="let card of data.applications.cards"
+    >
+      <div class="row">
+        <div class="card-img-wrapper">
+          <img class="card-img" [src]="card.img" alt="" />
+        </div>
+        <div class="card-info-wrapper">
+          <p class="card-header">
+            <span class="card-title">{{ card.header }}</span>
+            <i-bs class="star-icon" name="star-fill" width="15" height="15">
+            </i-bs>
+            <span class="card-rate">{{ card.rate }}</span>
+          </p>
+          <p class="card-subtitle-wrapper">
+            <span class="card-subtitle">{{ card.subTitle }}: </span
+            ><span class="card-author"> {{ card.author }}</span>
+          </p>
+          <p class="card-description description">
+            {{ card.description }}
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="btn-wrapper">
+    <app-primary-button
+      value="جميع التطبيقات"
+      className="sec-btn"
+    ></app-primary-button>
+  </div>
+</div>

@@ -7,9 +7,10 @@ import { CoreModule } from '../core/core.module';
 import { ElementsModule } from '../elements/elements.module';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { FooterComponent } from './components/footer/footer.component';
+import { ApplicationsComponent } from './components/applications/applications.component';
 
 @NgModule({
-  declarations: [MainPageComponent, FooterComponent],
+  declarations: [MainPageComponent, FooterComponent, ApplicationsComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,

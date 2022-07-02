@@ -1,0 +1,101 @@
+//applications section
+#applications {
+  margin: 50px auto;
+  text-align: center;
+}
+.applications-header {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.applications-description {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.cards-wrapper {
+  width: 88%;
+  margin: auto;
+}
+.applications-card {
+  text-align: right;
+  background: #f7f7f7;
+  border-radius: 10px;
+  width: 24%;
+  padding: 30px;
+}
+.cards-wrapper .card-img {
+  width: 45px;
+  height: 45px;
+}
+.card-info-wrapper {
+  margin-right: 10px;
+  width: 75%;
+}
+.card-header {
+  display: flex;
+  align-items: center;
+}
+.card-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--main-color);
+}
+.star-icon {
+  color: var(--btn-color);
+  margin-right: 25px;
+  margin-left: 10px;
+}
+.card-rate {
+  color: #45a787;
+}
+.card-subtitle-wrapper {
+  margin-top: 0px;
+  margin-bottom: 15px;
+}
+.card-subtitle,
+.card-author {
+  font-weight: 400;
+  font-size: 10px;
+}
+.card-author {
+  color: var(--p-color);
+  margin-right: 3px;
+}
+.card-description {
+  font-weight: 400;
+  font-size: 10px;
+}
+.btn-wrapper {
+  display: inline-block;
+  margin: 40px auto 0;
+}
+@media (max-width: 74.9375em) {
+  .col-m-6 {
+    width: 49%;
+    margin-bottom: 30px;
+  }
+
+  .description {
+    max-width: unset;
+    width: 80%;
+  }
+}
+@media (max-width: 47.9375em) {
+  .col-s-12 {
+    width: 100%;
+    margin: 0 auto 30px;
+    padding: 0 16px;
+  }
+  .btn-wrapper {
+    display: block;
+    margin: 40px auto 0;
+    padding: 0 16px;
+  }
+  .description {
+    max-width: unset;
+    width: 100%;
+  }
+}
