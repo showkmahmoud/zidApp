@@ -46,6 +46,8 @@ a span {
 @media (max-width: 47.9375em) {
   .navbar {
     padding: 13px 16px 0;
+    position: fixed;
+    z-index: 1111;
   }
   .navbar ul {
     flex-wrap: wrap;
