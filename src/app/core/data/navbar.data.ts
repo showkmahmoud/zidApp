@@ -1,10 +1,10 @@
 export type NavbarItem = {
   label: string;
-  value: string;
+  value: null;
 };
 export const navbarItems = [
-  { label: 'الرئيسية', value: '#home' },
-  { label: 'التصنيقات', value: '#categories' },
-  { label: 'التطبيقات', value: '#applications' },
-  { label: 'طور تطبيق', value: '#improvements' },
+  { label: 'الرئيسية', value: null },
+  { label: 'التصنيقات', value: null },
+  { label: 'التطبيقات', value: null },
+  { label: 'طور تطبيق', value: null },
 ];
