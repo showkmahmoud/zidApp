@@ -5,7 +5,7 @@ import { ApplicationItem, applications } from './applications.data';
 
 export type SocialItem = {
   iconName: IconNamesEnum;
-  link: string;
+  link: null;
   iconSize: string;
 };
 export type SectionsData = {
@@ -71,26 +71,26 @@ export const sectionData: SectionsData = {
     cards: applications,
   },
   footer: {
-    logo: 'assets/zid/zid-logo 1.png',
+    logo: 'assets/zid/footer-logo.png',
     socialMedia: [
       {
         iconName: IconNamesEnum.Youtube,
-        link: '',
+        link: null,
         iconSize: '20',
       },
       {
         iconName: IconNamesEnum.Linkedin,
-        link: '',
+        link: null,
         iconSize: '20',
       },
       {
         iconName: IconNamesEnum.Instagram,
-        link: '',
+        link: null,
         iconSize: '20',
       },
       {
         iconName: IconNamesEnum.Twitter,
-        link: '',
+        link: null,
         iconSize: '20',
       },
     ],

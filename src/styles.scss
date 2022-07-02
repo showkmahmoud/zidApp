@@ -19,6 +19,7 @@
   box-sizing: border-box;
   font-family: "Cairo", sans-serif;
   direction: rtl;
+  scroll-behavior: smooth;
 }
 body {
   padding: 0;
@@ -71,7 +72,7 @@ a {
 .primary-btn {
   text-align: center;
   border: 1px solid transparent;
-  color: var(--btn-color);
+
   font-size: 1.2rem;
   transition: 0.2s;
   border-radius: 10px;
@@ -81,9 +82,11 @@ a {
 }
 .primary-btn {
   background: var(--main-color);
+  color: var(--btn-color);
 }
 .sec-btn {
   background: var(--main-bg);
+  color: var(--btn-color);
 }
 .btn:hover {
   box-shadow: 3px 3px 5px rgba(92, 92, 92, 0.5);

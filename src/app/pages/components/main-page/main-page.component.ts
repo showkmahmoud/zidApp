@@ -1,3 +1,4 @@
+import { ViewportScroller } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { sectionData, SectionsData } from 'src/app/data/sectionData';
 
@@ -8,7 +9,10 @@ import { sectionData, SectionsData } from 'src/app/data/sectionData';
 })
 export class MainPageComponent implements OnInit {
   data: SectionsData = sectionData;
-  constructor() {}
+  constructor(private scroll: ViewportScroller) {}
 
   ngOnInit(): void {}
+  scrollToTop() {
+    this.scroll.scrollToPosition([0, 0]);
+  }
 }
