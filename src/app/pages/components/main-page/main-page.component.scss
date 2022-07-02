@@ -1,0 +1,76 @@
+//home section
+section.home {
+  margin-top: 60px;
+}
+#home {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.home-header {
+  color: var(--main-color);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 64px;
+}
+.home-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 34px;
+  width: 39%;
+  margin: 20px auto 0;
+}
+.btn-wrapper {
+  display: inline-block;
+  margin: 40px auto 0;
+}
+
+//application section
+#applications {
+  margin-top: 95px;
+}
+.imgs-wrapper {
+  position: relative;
+  width: 80%;
+  margin: 50px auto 150px;
+  text-align: center;
+}
+.applications-dot_pattern {
+  position: absolute;
+  width: 176px;
+  height: 191px;
+  top: -37px;
+  left: 61px;
+  z-index: -1;
+}
+.applications-main_img {
+  width: 75%;
+  margin: auto;
+}
+.applications-ellipse {
+  position: absolute;
+  width: 367px;
+  height: 367px;
+  z-index: -1;
+  right: 45px;
+  bottom: -90px;
+}
+//improvements section
+#improvements {
+  width: 95%;
+  margin: 200px auto;
+}
+.improvements-img_wrapper {
+  width: 50%;
+}
+.improvements-info_wrapper {
+  width: 40%;
+  text-align: right;
+}
+.improvements-info_wrapper-header {
+  color: var(--main-color);
+  font-weight: 700;
+  font-size: 24px;
+  margin-bottom: 25px;
+}

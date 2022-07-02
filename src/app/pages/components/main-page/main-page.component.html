@@ -1,2 +1,47 @@
 <app-navbar></app-navbar>
-<app-primary-button value="تصفح التطبيقات"></app-primary-button>
+<section class="container home">
+  <div id="home">
+    <p class="home-header">{{ data.home.header }}</p>
+    <p class="home-description">
+      {{ data.home.description }}
+    </p>
+    <div class="btn-wrapper">
+      <app-primary-button value="تصفح التطبيقات"></app-primary-button>
+    </div>
+  </div>
+  <div id="applications">
+    <div class="imgs-wrapper">
+      <img class="applications-dot_pattern" [src]="data.categories.secImg" />
+
+      <img class="applications-main_img" [src]="data.categories.majorImg" />
+
+      <img class="applications-ellipse" [src]="data.categories.thirdImg" />
+    </div>
+  </div>
+</section>
+<div id="improvements">
+  <div class="row justify-space-between">
+    <div class="improvements-info_wrapper">
+      <p class="improvements-info_wrapper-header">
+        {{ data.improvements.header }}
+      </p>
+      <p class="improvements-info_wrapper-description">
+        {{ data.improvements.description }}
+      </p>
+      <ul>
+        <li *ngFor="let item of data.improvements.improvementItems">
+          {{ item.label }}
+        </li>
+      </ul>
+    </div>
+    <div class="improvements-img_wrapper">
+      <div class="imgs-wrapper">
+        <img class="applications-dot_pattern" [src]="data.categories.secImg" />
+
+        <img class="applications-main_img" [src]="data.categories.majorImg" />
+
+        <img class="applications-ellipse" [src]="data.categories.thirdImg" />
+      </div>
+    </div>
+  </div>
+</div>

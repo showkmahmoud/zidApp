@@ -1,6 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 
 /*   global  */
+
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&display=swap");
+
 :root {
   --main-color: #8a57a3;
   --btn-color: #fdb515;
@@ -15,6 +18,8 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+  direction: rtl;
 }
 body {
   padding: 0;

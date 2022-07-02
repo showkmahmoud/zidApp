@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { sectionData, SectionsData } from 'src/app/data/sectionData';
 import { NavbarItem, navbarItems } from '../../data/navbar.data';
 
 @Component({
@@ -7,7 +8,8 @@ import { NavbarItem, navbarItems } from '../../data/navbar.data';
   styleUrls: ['./navbar.component.scss'],
 })
 export class NavbarComponent implements OnInit {
-  navbarItems: NavbarItem[] = navbarItems.reverse();
+  data: SectionsData = sectionData;
+
   menuOpen: boolean = false;
   constructor() {}
 
