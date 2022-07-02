@@ -9,7 +9,9 @@ import { sectionData, SectionsData } from 'src/app/data/sectionData';
 })
 export class MainPageComponent implements OnInit {
   data: SectionsData = sectionData;
-  constructor() {}
+  constructor(private scroll: ViewportScroller) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.scroll.scrollToPosition([0, 0]);
+  }
 }

@@ -8,9 +8,10 @@ import { ElementsModule } from '../elements/elements.module';
 import { NgxBootstrapIconsModule, allIcons } from 'ngx-bootstrap-icons';
 import { FooterComponent } from './components/footer/footer.component';
 import { ApplicationsComponent } from './components/applications/applications.component';
+import { ImprovementsSectionComponent } from './components/improvements-section/improvements-section.component';
 
 @NgModule({
-  declarations: [MainPageComponent, FooterComponent, ApplicationsComponent],
+  declarations: [MainPageComponent, FooterComponent, ApplicationsComponent, ImprovementsSectionComponent],
   imports: [
     CommonModule,
     PagesRoutingModule,
