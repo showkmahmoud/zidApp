@@ -8,6 +8,10 @@ a:hover {
 // Display Part of Top Menu CSS
 .navbar {
   padding: 0px 25px;
+  top: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
 }
 
 .navbar ul {
@@ -42,6 +46,8 @@ a:hover {
   }
   .navbar-toggle {
     display: inline-flex;
+    margin-right: auto;
+    cursor: pointer;
   }
   .navbar-logo {
     padding-left: 0;

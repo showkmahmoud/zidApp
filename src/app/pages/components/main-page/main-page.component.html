@@ -6,16 +6,19 @@
       {{ data.home.description }}
     </p>
     <div class="btn-wrapper">
-      <app-primary-button value="تصفح التطبيقات"></app-primary-button>
+      <app-primary-button
+        value="تصفح التطبيقات"
+        className="primary-btn"
+      ></app-primary-button>
     </div>
   </div>
-  <div id="applications">
+  <div id="categories">
     <div class="imgs-wrapper">
-      <img class="applications-dot_pattern" [src]="data.categories.secImg" />
+      <img class="categories-dot_pattern" [src]="data.categories.secImg" />
 
-      <img class="applications-main_img" [src]="data.categories.majorImg" />
+      <img class="categories-main_img" [src]="data.categories.majorImg" />
 
-      <img class="applications-ellipse" [src]="data.categories.thirdImg" />
+      <img class="categories-ellipse" [src]="data.categories.thirdImg" />
     </div>
   </div>
 </section>
@@ -28,19 +31,68 @@
       <p class="improvements-info_wrapper-description">
         {{ data.improvements.description }}
       </p>
-      <ul>
+      <ul class="improvements-info_wrapper-list">
         <li *ngFor="let item of data.improvements.improvementItems">
-          {{ item.label }}
+          <div class="icon-wrapper">
+            <img class="icon" [src]="item.icon" alt="" />
+          </div>
+          <span class="item-label"> {{ item.label }} </span>
         </li>
       </ul>
+      <div class="btn-wrapper">
+        <app-primary-button
+          value="تصفح التطبيقات"
+          className="primary-btn"
+        ></app-primary-button>
+      </div>
     </div>
     <div class="improvements-img_wrapper">
       <div class="imgs-wrapper">
-        <img class="applications-dot_pattern" [src]="data.categories.secImg" />
+        <img
+          class="improvements-img_wrapper-dot_pattern"
+          [src]="data.improvements.secImg"
+        />
+        <img
+          class="improvements-img_wrapper-main_img"
+          [src]="data.improvements.majorImg"
+        />
+        <img
+          class="improvements-img_wrapper-ellipse"
+          [src]="data.improvements.thirdImg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
 
-        <img class="applications-main_img" [src]="data.categories.majorImg" />
-
-        <img class="applications-ellipse" [src]="data.categories.thirdImg" />
+<div id="applications">
+  <p class="applications-header">
+    {{ data.applications.header }}
+  </p>
+  <p class="applications-description">
+    {{ data.applications.description }}
+  </p>
+  <div class="row cards-wrapper justify-space-between">
+    <div class="applications-card" *ngFor="let card of data.applications.cards">
+      <div class="row">
+        <div class="card-img-wrapper">
+          <img class="card-img" [src]="card.img" alt="" />
+        </div>
+        <div class="card-info-wrapper">
+          <p class="card-header">
+            <span class="card-title">{{ card.header }}</span>
+            <i-bs class="star-icon" name="star-fill" width="15" height="15">
+            </i-bs>
+            <span class="card-rate">{{ card.rate }}</span>
+          </p>
+          <p class="card-subtitle-wrapper">
+            <span class="card-subtitle">{{ card.subTitle }}: </span
+            ><span class="card-author"> {{ card.author }}</span>
+          </p>
+          <p class="card-description">
+            {{ card.description }}
+          </p>
+        </div>
       </div>
     </div>
   </div>

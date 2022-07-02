@@ -10,7 +10,7 @@ import { NavbarItem, navbarItems } from '../../data/navbar.data';
 export class NavbarComponent implements OnInit {
   data: SectionsData = sectionData;
 
-  menuOpen: boolean = false;
+  menuOpen: boolean = true;
   constructor() {}
 
   ngOnInit(): void {}

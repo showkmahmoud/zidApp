@@ -1,7 +1,7 @@
 import { IconNamesEnum } from 'ngx-bootstrap-icons';
 import { NavbarItem, navbarItems } from '../core/data/navbar.data';
+import { ImprovementItem, improvements } from '../pages/data/improvements.data';
 import { ApplicationItem, applications } from './applications.data';
-import { ImprovementItem, improvements } from './improvements.data';
 
 export type SocialItem = {
   iconName: IconNamesEnum;
@@ -33,7 +33,7 @@ export type SectionsData = {
   applications: {
     header: string;
     description: string;
-    applications: ApplicationItem[];
+    cards: ApplicationItem[];
   };
   footer: {
     logo: string;
@@ -61,14 +61,14 @@ export const sectionData: SectionsData = {
     مميزات سوق تطبيقات زد تساعدك في سهولة وسرعة الاستفادة من خدمات وحلول
     سوق التطبيقات لنمو متجرك ومضاعفة أرباحك `,
     improvementItems: improvements,
-    majorImg: 'zidapp_1-min 1.png',
+    majorImg: 'assets/zid/zidapp_1-min 1.png',
     secImg: 'assets/zid/Dot Pattern 2.png',
     thirdImg: 'assets/zid/Ellipse 250.png',
   },
   applications: {
-    header: '',
-    description: '',
-    applications: applications,
+    header: ' التطبيقات المميزة',
+    description: 'تطبيقات تقدم حلول وخدمات مميزة نوصي بتجربتها',
+    cards: applications,
   },
   footer: {
     logo: 'assets/zid/zid-logo 1.png',
