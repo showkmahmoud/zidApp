@@ -30,11 +30,12 @@
 }
 .messages-wrapper {
   right: 3%;
-  bottom: 4%;
+  bottom: 4.8%;
 }
 .scroll-up {
   left: 3%;
   bottom: 3%;
+  z-index: 11;
 }
 .messages-wrapper i-bs {
   color: #33475b;
@@ -73,6 +74,6 @@
   }
   .messages-wrapper {
     right: 6%;
-    bottom: 4.5%;
+    bottom: 4.8%;
   }
 }
